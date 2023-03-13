@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.sidebar {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/chat-dos-otarios.appspot.com/o/background-img.png?alt=media&token=ad4b9b81-773e-4095-895e-7bdd14de88fe");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 32px;
+  width: 16.821rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(
+    168.44deg,
+    rgba(46, 51, 90, 0.26) 1.62%,
+    rgba(28, 27, 51, 0.26) 95.72%
+  );
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -60px;
+  color: rgba(235, 235, 245, 0.6);
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+input::placeholder {
+  color: rgba(235, 235, 245, 0.6);
+}
+
+form {
+  margin-bottom: -120px;
+}
+
+.wheather {
+  margin: 0 auto 49px auto;
+  /* centralizar horizontalmente e deixar a distância de 49px em relação ao input */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* centralizar verticalmente */
+  text-align: center;
+  align-self: flex-start; /* alinhar logo abaixo do input */
+}
+
+.wheather h2 {
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 41px;
+
+  text-align: center;
+  letter-spacing: 0.374px;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+}
+
+.wheather h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 70px;
+  /* identical to box height, or 109% */
+
+  text-align: center;
+  letter-spacing: 0.374px;
+
+  color: #ffffff;
+}
+
+.wheather p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.38px;
+  color: rgba(235, 235, 245, 0.6);
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+  .wheather > img {
+    display: none;
+  }
+  .wheather p {
+    font-size: 0.875rem;
+  }
+  .wheather h4 {
+    font-size: 2rem;
+  }
+  .wheather h2 {
+    display: none;
+  }
+  .wheather {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 150px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  input[type="text"] {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 0;
+  }
+}

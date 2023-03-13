@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.weather-info {
+  /*Ajusta o display*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+  grid-template-columns: 1fr 1fr; /*Adiciona esta propriedade*/
+}
+
+.weather-info h1 {
+  /*Ajusta o display de temperatura*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin: 0;
+  color: white;
+}
+
+.weather-info p {
+  /*Ajusta o display de Umidade*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  margin: 0;
+  color: white;
+}
+
+h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.078px;
+  color: rgba(235, 235, 245, 0.6);
+}
+
+.square {
+  /*Ajusta o fundo roxo*/
+  width: 15rem;
+  height: 11.5rem;
+  display: flex;
+  justify-content: space-between; /*Adiciona esta propriedade*/
+  align-items: center;
+  background: linear-gradient(90deg, #5936b4 0%, #362a84 103.55%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25),
+    inset 1px 1px 0px rgba(255, 255, 255, 0.25);
+  border-radius: 50px 250px 20px 20px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.weather-icon-container {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-icon-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 9px;
+}
+.weather-icon-info > span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 41px;
+  letter-spacing: 0.374px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.square:hover {
+  /*Efeito de cor na presença do cursor sobre o fundo roxo*/
+  background-color: blueviolet;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .square {
+    flex-basis: 33.33%;
+  }
+}
