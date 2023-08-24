@@ -1,0 +1,116 @@
+.NavbarContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    width: 100%;
+    height: 72px;
+    background: linear-gradient(360deg, #262c51 0%, #3e3f74 100%);
+    border: 0.5px solid rgba(117, 130, 244, 0.5);
+    box-shadow: 0px 4px 4px #7582f4;
+    border-radius: 40px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 10000;
+  }
+
+.NavbarContent {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    z-index: 10000;
+    
+  }
+  
+  .brand-logo {
+    border-radius: 40px;
+    width: 50px;
+    position: absolute;
+    
+  }
+
+/* Responsividade para telas menores que 1200px */
+@media (max-width: 1200px) {
+  .NavbarContent {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.NavBarBrand {
+  display: flex;
+  align-items: center;
+  padding: 24px 12px;
+}
+
+.NavBarBrand > p {
+  color: #ffffff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 22px */
+  letter-spacing: -0.66px;
+  margin-left: 100px;
+}
+
+.NavBarMenu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+
+.NavBarLink {
+  display: flex;
+  padding: 24px 12px;
+  align-items: flex-start;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.hamburger {
+  display: none; /* Oculta o botão do menu hambúrguer por padrão */
+}
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Exibe o botão do menu hambúrguer em telas menores */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .NavBarMenu {
+    display: none; /* Esconde o menu padrão */
+  }
+
+  .NavBarMenu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 72px;
+    right: 0;
+    background: #262c51;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    width: 200px; 
+  }
+
+  .brand-logo {
+    border-radius: 40px;
+    width: 50px;
+    position: absolute;
+    
+  }
+}

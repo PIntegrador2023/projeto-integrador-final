@@ -1,0 +1,55 @@
+.containerSport {
+    max-width: 96rem;
+    height: fit-content;
+    margin: 5rem auto;
+    padding: 5rem; /* Reduzido o padding para 1rem */
+    border-radius: 8px;
+    background: radial-gradient(50% 50% at 50% 50%, #301276 0%, #45278b 100%);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 44px;
+    padding-left: 40px;
+  }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.pagination li {
+  margin: 0 5px;
+  
+}
+
+.pagination a {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ACACAC;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #FFFF;
+  cursor: pointer;
+}
+
+.pagination a:hover,
+.pagination .active a {
+  background-color: #45278b; /* você pode escolher a cor que melhor se adeque ao seu design */
+  color: #FFF;
+}
+
+.pagination .break-me a {
+  cursor: default;
+  color: #ACACAC;
+}
+@media (max-width: 600px) {
+  .pagination .previous, 
+  .pagination .next {
+    display: none !important;
+  }
+}
+
+
